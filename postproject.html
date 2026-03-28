@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POST PROJECTS</title>
+    <style>
+
+#posting{
+    width: 90%;
+    max-width: 450px;
+    margin: 30px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+
+}
+
+
+#posting h1{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+#posting table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+#posting td{
+    padding: 8px 0;
+    border: none;
+}
+
+
+#posting label{
+    font-size: 14px;
+    color: #555;
+}
+
+
+#posting input[type="text"]{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+
+#posting input[type="text"]:focus{
+    border-color: #007bff;
+}
+
+
+#posting input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #007bff;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+#posting input[type="submit"]:hover{
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+    <div id="posting">
+        <h1 style="font-family:cursive;">POST YOUR PORJECTS</h1>
+         <form action="postprojects.jsp" method="post">
+            <table border="2" style="width: 100%; height: 500px; border-radius: 50px;">
+                <tr>
+                    <td>
+                        <label for="clientname">client name:</label>
+        <input type="text" id="clientname" name="clientname" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="projectname">Project Name:</label>
+        <input type="text" id="projectname" name="projectname" required><br><br></td>
+                </tr>
+                <tr>
+                    <td>
+
+        <label for="REQUIREMENTS">ENTER REQUIREMENTS:</label>
+        <input type="text" id="REQUIREMENTS" name="REQUIREMENTS" required><br><br>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+        <label for="phoneno">Phoneno:</label>
+         <input type="text" id="phoneno" name="phoneno" required><br><br>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+          <label for="instagramID">instagramID:</label>
+         <input type="text" id="instagramID" name="instagramID" required><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <input type="submit" value="Post Project"></td>
+
+                </tr>
+            </table>
+
+        
+       
+
+    </form>
+    </div>
+   
+</body>
+</html>

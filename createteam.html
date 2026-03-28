@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Team</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 80px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4facfe;
+            box-shadow: 0 0 5px #4facfe;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #4facfe;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: #00c6ff;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Create Team</h2>
+
+    <form action="createteam.jsp" method="post">
+        <table>
+            <tr>
+                <td>Team Name:</td>
+                <td><input type="text" name="teamname" required /></td>
+            </tr>
+            <tr>
+                <td>Team Leader:</td>
+                <td><input type="text" name="teamleader" required /></td>
+            </tr>
+            <tr>
+                <td>Team Members:</td>
+                <td><input type="text" name="teammembers" required /></td>
+            </tr>
+            <tr>
+                 <td>Team password:</td>
+                <td><input type="password" name="teampassword" required /></td>
+            </tr>
+              <tr>
+                 <td>Team EAMIL:</td>
+                <td><input type="email" name="EMAIL" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Create Team" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<jsp:include page="postproject.html" />
+<jsp:include page="search.html" />
+
+</body>
+</html>

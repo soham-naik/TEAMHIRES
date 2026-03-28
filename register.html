@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register Page</title>
+
+<style>
+
+/* Reset */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page Background */
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+/* Form Container */
+table{
+width:400px;
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+border:none;
+}
+
+/* Title */
+th{
+font-size:26px;
+padding-bottom:15px;
+color:#333;
+}
+
+/* Table cells */
+td{
+padding:10px;
+font-size:16px;
+color:#333;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"]{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+outline:none;
+}
+
+/* Input focus */
+input[type="text"]:focus,
+input[type="password"]:focus{
+border-color:#4facfe;
+}
+
+/* Register button */
+input[type="submit"]{
+width:100%;
+padding:12px;
+background:#4facfe;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+/* Hover effect */
+input[type="submit"]:hover{
+background:#2c7be5;
+}
+
+/* Login link */
+a{
+color:#2c7be5;
+font-weight:bold;
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<form action="register.jsp" method="post">
+
+<table>
+
+<tr>
+<th colspan="2">Register</th>
+</tr>
+
+<tr>
+<td>Name:</td>
+<td><input type="text" name="name" required></td>
+</tr>
+
+<tr>
+<td>Phone No:</td>
+<td><input type="text" name="phoneno" required></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="password" name="password" required></td>
+</tr>
+
+<tr>
+<td colspan="2">
+<input type="submit" value="Register">
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+Account already created? <a href="log.html">Login here</a>
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>

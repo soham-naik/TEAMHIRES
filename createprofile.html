@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Team Registration</title>
+</head>
+
+<body>
+
+<h2>Create Your Team</h2>
+
+<form action="createprofile.jsp" method="post">
+
+<table border="1" cellpadding="10">
+
+<tr>
+<td>Team Name</td>
+<td><input type="text" name="Teamname" required></td>
+</tr>
+
+<tr>
+<td>Team Leader</td>
+<td><input type="text" name="Teamleader" required></td>
+</tr>
+
+<tr>
+<td>Number of Members</td>
+<td><input type="number" name="noofmembers" required></td>
+</tr>
+
+<tr>
+<td>Member Name</td>
+<td><input type="text" name="members" required></td>
+</tr>
+
+<tr>
+<td>Email</td>
+<td><input type="email" name="email" required></td>
+</tr>
+
+<tr>
+<td>Phone</td>
+<td><input type="text" name="phone" required></td>
+</tr>
+
+<tr>
+<td>Role</td>
+<td>
+<select name="roles">
+<option>Frontend Developer</option>
+<option>Backend Developer</option>
+<option>Full Stack Developer</option>
+<option>UI/UX Designer</option>
+<option>Data Analyst</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td>Team Password</td>
+<td><input type="password" name="teampassword" required></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Create Team">
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</body>
+</html>
