@@ -7,10 +7,8 @@ String password = request.getParameter("password");
 
 try{
 
-Class.forName("com.mysql.cj.jdbc.Driver");
-
-Connection con = DriverManager.getConnection(
-"jdbc:mysql://localhost:3306/resgister_db","root","");
+Class.forName("com.mysql.cj.jdbc.Driver");  
+<%@ include file="db.jsp" %>
 
 PreparedStatement ps = con.prepareStatement(
 "insert into data(name, phoneno, password) values(?,?,?)");
