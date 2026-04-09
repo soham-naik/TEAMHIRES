@@ -1,8 +1,7 @@
 <%@ page import="java.sql.*" %>
 <%
 try {
-    Class.forName("com.mysql.cj.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/resgister_db","root","");
+    Class.forName("com.mysql.cj.jdbc.Driver");<%@ include file="db.jsp" %>
 
     ResultSet rs = con.createStatement().executeQuery("SELECT * FROM chat_messages ORDER BY id DESC");
 
