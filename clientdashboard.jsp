@@ -76,9 +76,7 @@ border:none;
 </tr>
 
 <%
-try{
-Connection con = DriverManager.getConnection(
-"jdbc:mysql://localhost:3306/resgister_db","root","");
+try{<%@ include file="db.jsp" %>
 
 PreparedStatement ps = con.prepareStatement(
 "select * from projectdata where clientname=?");
