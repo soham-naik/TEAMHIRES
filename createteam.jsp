@@ -81,9 +81,7 @@ ResultSet rs = null;
 
 try{
     Class.forName("com.mysql.cj.jdbc.Driver");
-
-    con = DriverManager.getConnection(
-        "jdbc:mysql://localhost:3306/resgister_db","root","");
+<%@ include file="db.jsp" %>
 
     ps = con.prepareStatement(
         "INSERT INTO teamdata(teamname, teamleader, teammembers, teampassword, EMAIL) VALUES(?,?,?,?,?)"
