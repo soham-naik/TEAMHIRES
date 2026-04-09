@@ -14,9 +14,7 @@ String teampassword = request.getParameter("teampassword");
 try{
 
 Class.forName("com.mysql.cj.jdbc.Driver");
-
-Connection con = DriverManager.getConnection(
-"jdbc:mysql://localhost:3306/resgister_db","root","");
+<%@ include file="db.jsp" %>
 
 PreparedStatement ps = con.prepareStatement(
 "insert into profile(Teamname,Teamleader,members,noofmembers,email,phone,roles,teampassword) values(?,?,?,?,?,?,?,?)"
