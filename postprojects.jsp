@@ -7,8 +7,7 @@ String phoneno = request.getParameter("phoneno");
 String instagramID = request.getParameter("instagramID");
 
 try{
-Class.forName("com.mysql.cj.jdbc.Driver");
-Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/resgister_db","root","");
+Class.forName("com.mysql.cj.jdbc.Driver");  <%@ include file="db.jsp" %>
 
 PreparedStatement ps = con.prepareStatement(
 "insert into projectdata(clientname,projectname, REQUIREMENTS,Phoneno,instagramID) values(?,?,?,?,?)");
