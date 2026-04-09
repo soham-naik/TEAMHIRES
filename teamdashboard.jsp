@@ -13,7 +13,8 @@ String leader="", members="", email="";
 String meetingRoom = teamname + "_meeting";
 
 try{
-    Class.forName("com.mysql.cj.jdbc.Driver");  <%@ include file="db.jsp" %>
+    Class.forName("com.mysql.cj.jdbc.Driver"); 
+<%@ include file="db.jsp" %>
 
     PreparedStatement ps = con.prepareStatement(
         "SELECT * FROM teamdata WHERE teamname=?"
