@@ -69,9 +69,7 @@ String status = request.getParameter("status");
 try{
 
 Class.forName("com.mysql.cj.jdbc.Driver");
-
-Connection con = DriverManager.getConnection(
-"jdbc:mysql://localhost:3306/resgister_db","root","");
+<%@ include file="db.jsp" %>
 
 PreparedStatement ps = con.prepareStatement(
 "INSERT INTO project_apply (teamname,projectname,status) VALUES (?,?,?)");
