@@ -3,7 +3,7 @@
 String selectteam = request.getParameter("selectteam");
 try{
     Class.forName("com.mysql.cj.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/resgister_db","root","");
+  <%@ include file="db.jsp" %>
     PreparedStatement ps = con.prepareStatement("select * from teamdata where teamname = ?");
     ps.setString(1, selectteam);
     ResultSet rs = ps.executeQuery();
