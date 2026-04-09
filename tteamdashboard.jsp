@@ -10,7 +10,7 @@ String leader="", members="", email="";
 
 try{
     Class.forName("com.mysql.cj.jdbc.Driver");
-    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/resgister_db","root","");
+  <%@ include file="db.jsp" %>
 
     PreparedStatement ps = con.prepareStatement("SELECT * FROM teamdata WHERE teamname=?");
     ps.setString(1, teamname);
