@@ -6,9 +6,7 @@ String password = request.getParameter("password");
 
 try{
 Class.forName("com.mysql.cj.jdbc.Driver");
-
-Connection con = DriverManager.getConnection(
-"jdbc:mysql://localhost:3306/resgister_db","root","");
+  <%@ include file="db.jsp" %>
 
 PreparedStatement ps = con.prepareStatement(
 "select * from data where name=? and password=?");
