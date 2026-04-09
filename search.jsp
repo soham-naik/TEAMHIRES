@@ -11,9 +11,7 @@ if(teamname != null && !teamname.trim().isEmpty()) {
     try{
 
         Class.forName("com.mysql.cj.jdbc.Driver");
-
-        Connection con = DriverManager.getConnection(
-        "jdbc:mysql://localhost:3306/resgister_db","root","");
+  <%@ include file="db.jsp" %>
 
         PreparedStatement ps = con.prepareStatement(
         "SELECT * FROM teamdata WHERE teamname=?");
