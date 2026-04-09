@@ -246,9 +246,7 @@ setInterval(() => {
 
 <%
 try{
-    Class.forName("com.mysql.cj.jdbc.Driver");
-    Connection con = DriverManager.getConnection(
-    "jdbc:mysql://localhost:3306/resgister_db","root","");
+    Class.forName("com.mysql.cj.jdbc.Driver");  <%@ include file="db.jsp" %>
     Statement st = con.createStatement();
     ResultSet rs = st.executeQuery("SELECT * FROM projectdata ");
 
